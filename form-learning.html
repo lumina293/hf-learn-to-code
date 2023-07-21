@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table</title>
+</head>
+<style>
+  table, th, td{
+    border: 1px solid green;
+    border-collapse: collapse;
+  }
+  th, td{
+    text-align: center;
+    padding: 20px;
+  }
+  tr:nth-child(even){
+    background-color: aqua;
+  }
+  /* tr:nth-child(odd){
+    background-color: blue;
+  } */
+  td:nth-child(odd){
+    border-radius: 20px;
+  }
+
+</style>
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Mai</td>
+      <td>29</td>
+      <td>Vn</td>
+    </tr>
+    <tr>
+      <td>Nam</td>
+      <td>30</td>
+      <td>vn</td>
+    </tr>
+  </table>
+  <br><br><br>
+  <form action="">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname">
+  </form>
+<br>
+  <form action="">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="password"><br><br>
+    <input type="submit" >
+  </form>
+  <br>
+  <form action="">
+    <input type="radio" id="html" name="fav-language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav-language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav-language" value="JAVASCRIPT">
+    <label for="javascript">JAVASCRIPT</label>
+  </form>
+  <br>
+  <form action="">
+    <input type="checkbox" id="animal1" name="animal1" value="Cat">
+    <label for="animal1">Cat</label><br>
+    <input type="checkbox" id="animal2" name="animal2" value="Dog">
+    <label for="animal2">Dog</label><br>
+    <input type="checkbox" id="animal3" name="animal3" value="Duck">
+    <label for="animal3">Duck</label>
+  </form>
+  <br>
+  <input type="button" onclick="alert('Hi Mina')" value="Click Me!">
+  <br><br>
+  <form action="">
+    <label for="datemax">Enter a date before 1990-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1989-12-31"><br><br>
+    <label for="datemin">Enter a date after 2023-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2023-01-02">
+  </form>
+</body>
+</html>
